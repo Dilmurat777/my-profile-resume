@@ -51,9 +51,9 @@ const Contact = () => {
       </div>
 
       <div className="w-full">
-        <div className="w-full h-auto flex justify-between">
+        <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
           <ContactLeft />
-          <div className="w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2025] to-[#23272b] flex flex-col gap-8 p-8 rounded-lg shadow-shadowOne">
+          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2025] to-[#23272b] flex flex-col gap-8 p-8 rounded-lg shadow-shadowOne">
             <form className="w-full flex flex-col gap-6">
               {errMsg && (
                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
@@ -66,8 +66,8 @@ const Contact = () => {
                 </p>
               )}
 
-              <div className="w-full flex gap-8">
-                <div className="w-1/2 flex flex-col gap-4">
+              <div className="lgl:w-full flex flex-col md:flex-row gap-4">
+                <div className="w-full lg:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">YOUR NAME</p>
                   <input
                     onChange={(e) => setUsername(e.target.value)}
@@ -76,7 +76,7 @@ const Contact = () => {
                     type="text"
                   />
                 </div>
-                <div className="w-1/2 flex flex-col gap-4">
+                <div className="w-full lg:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">Phone number</p>
                   <input
                     onChange={(e) => setPhoneNumber(e.target.value)}

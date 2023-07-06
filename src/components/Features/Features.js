@@ -9,7 +9,7 @@ const Features = () => {
   return (
     <section id='features' className='w-full py-20 border-b-[1px] border-b-black'>
       <Title title='Features' des='What I Do' />
-      <div className='grid grid-cols-3 gap-20'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 gap-6 lgl:gap-20'>
         <Card
           title='SEO Optimisation'
           dec='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore, maiores obcaecati quod accusantium porro illum numquam'

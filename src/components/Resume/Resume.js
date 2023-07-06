@@ -17,7 +17,7 @@ const Resume = () => {
       </div>
 
       <div>
-        <ul className='grid grid-cols-4'>
+        <ul className='grid grid-cols-1 sml:grid-cols-2 mdl:grid-cols-4'>
           <li onClick={() => setEducationData(true) & seSkillData(false) & setExperienceData(false) & setAchievementData(false)} className={`${educationData ? 'border-designColor' : 'border-transparent'} resumeLi` }>Education</li>
           <li onClick={() => setEducationData(false) & seSkillData(true) & setExperienceData(false) & setAchievementData(false)} className={`${skillData ? 'border-designColor' : 'border-transparent'} resumeLi` }>Professional</li>
           <li onClick={() => setEducationData(false) & seSkillData(false) & setExperienceData(true) & setAchievementData(false)} className={`${experienceData ? 'border-designColor' : 'border-transparent'} resumeLi` }>Experience</li>

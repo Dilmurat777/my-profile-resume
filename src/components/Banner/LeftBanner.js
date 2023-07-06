@@ -8,20 +8,20 @@ const LeftBanner = () => {
   const [text] = useTypewriter({
     words: ['Professional Coder', 'Full Stack Developer', 'UI Designer'],
     loop: true,
-    typeSpeed: 70,
-    deleteSpeed: 50,
+    typeSpeed: 20,
+    deleteSpeed: 10,
     delaySpeed: 2000,
   })
 
   return (
-    <div className='w-1/2 flex flex-col gap-20'>
+    <div className='w-full lgl:w-1/2 flex flex-col gap-20'>
       <div className='flex flex-col gap-5'>
         <h4 className='text-lg font-normal'>WELCOME TO MY WORLD</h4>
-        <h1 className='text-6xl font-bold text-white'>
+        <h1 className='text-5xl lgl:text-6xl font-bold text-white'>
           Hi, I'm {" "}
-          <span className='text-designColor capitalize'>Dilmurat Idrisov</span>
+          <span className='text-5xl text-designColor capitalize'>Dilmurat Idrisov</span>
         </h1>
-        <h2 className='text-4xl font-bold text-white'>a <span>{text}</span>
+        <h2 className='text-3xl lgl:text-4xl font-bold text-white'>a <span>{text}</span>
           <Cursor
             cursorBlinking='false'
             cursorColor='#ff014f'
@@ -31,7 +31,7 @@ const LeftBanner = () => {
           I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I'm not adding motion just to spruce things up, but doing it in ways that.
         </p>
       </div>
-      <div className='flex justify-between'>
+      <div className='flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between'>
         <div>
           <h2 className='text-base uppercase font-titleFont mb-4'>
             Find me in
